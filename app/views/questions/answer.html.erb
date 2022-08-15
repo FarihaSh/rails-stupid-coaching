@@ -1,7 +1,19 @@
-<h2><strong> Your coach answers</strong> </h2>
-<<%= if @question = "I am going to work" %>>
-<<%= Great! %>>
-<<%= elsif @question = "?" %>>
-<<%= "Silly question, get dressed and go to work!"  %>>
-<<%= else %>>
-<<%= "I don't care, get dressed and go to work!" %>>
+
+ <div class="p-3 mb-2 text-dark">
+ <h2> <strong> Stupid Coaching </strong> </h2>
+
+ <br>
+  <div class="p-3 mb-2 text-dark">
+  <p>  <strong> Your question: </strong>
+  <br>
+  <%= @question %></p>
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+    <p> <strong> Coach answer: </strong>
+    <br>
+    <%= @answer %></p>
+  </div>
+
+<%= link_to'Ask a new question', ask_path %>
+ </div>
